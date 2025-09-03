@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+body
+{
+    background-image: url(../../Imagenes/login.jpg);
+    background-position: center;
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.glass_login
+{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid rgb(1, 1, 39);
+    backdrop-filter: blur(20px);
+    border-radius: 32px;
+    width: 300px;
+    height: 400px;
+    padding: 30px 40px;
+    box-shadow: 0 0 50px rgb(0, 0, 34);
+    margin-top: 15%;
+   
+}
+
+.glass_login h1
+{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 34);
+
+}
+
+.info
+{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.info input
+{
+    margin: 10px;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(133, 154, 247);
+    border: none;
+    outline: none;
+    box-shadow: 35px navy;
+    border-radius: 45px;
+    color: rgb(0, 0, 34);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    padding-left: 8px;
+
+}
+
+.info input:hover
+{
+    background-color: aliceblue;
+    
+}
+
+.info input::placeholder
+{
+    color:  rgb(0, 0, 34);
+    padding-left: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.btn
+{
+    width: 50%;
+    height: 45px;
+    border: none;
+    background-color:  rgb(0, 0, 34);
+    margin-top: 30px;
+    border-radius: 40px;
+    color: white;
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.btn:hover
+{
+    background-color:  rgb(3, 3, 92);
+}
+.sigeca
+{
+    position: fixed;
+    top: 0;
+    left: 15px;
+    text-align: center;
+}
+.sigeca h1
+{
+       
+    color: rgb(172, 156, 243);
+        font-size: 50px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+
+        
+}
+
+nav ul
+{
+    position: fixed;
+    top: 0;
+    right: 15px;
+    height: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+nav form button
+{
+    position: fixed;
+    right: 2%;
+    color: rgb(172, 156, 243);
+    font-size: 15px;
+    background-color:rgb(2, 2, 56); 
+    border: 2px solid rgb(3, 78, 78);
+    transition: 0.5s;
+    padding-left: 1%;
+    padding-right: 1%;
+    top: 2%;
+    width: auto;
+    height: 40px;
+    border-radius: 35px;
+}
+
+nav form button:hover
+{
+    color: beige ;
+    background-color: rgb(2, 2, 56);
+    box-shadow: 0px 0px 300px 86px #00d9ff8a;
+}
+
+nav
+{
+    position: fixed;
+    height: 70px;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgb(2, 2, 56);
+    box-shadow: 0px 15px 50px 11px  rgb(2, 2, 56);
+    z-index: 11;
+}
+
+.error{
+    text-align: center;
+}
+
+.error p{
+    color: black;
+    background-color: #699ca4;
+}
+
+            @media screen and (max-width: 768px) 
+{
+  .glass_login
+  {
+    margin-top: 18%;
+
+  }
+}

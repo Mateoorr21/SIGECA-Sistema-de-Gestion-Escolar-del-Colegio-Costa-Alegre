@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=DM+Serif+Display:ital@0;1&display=swap');
+  
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+
+}
+.contenedor
+{
+background-image: url("../../Imagenes/mar.gif");
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat ;
+color: var(--dark-blue);
+display: flex;
+flex-direction: column;
+min-height: 95vh;
+line-height: 1.6;
+margin-bottom: 0;
+}
+
+.imagenes {
+    margin-top: 0%; 
+    width: 40%;
+    height: calc(100vh - 530px);
+    position: relative;
+    margin-left: 30%;
+    border-radius: 100px;
+    background-color: rgba(2, 85, 85, 0.486);
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+     -webkit-box-shadow: 0px 15px 50px 11px;
+    -moz-box-shadow: 0px 15px 50px 11px;
+    box-shadow: 0px 15px 50px 11px  rgb(2, 2, 56);
+}
+
+.imagenes img {
+    position: relative;
+    margin-top: 4%;
+    width: 40%;
+    border-radius: 35px;
+    height: 200px;
+    object-fit: cover; 
+    z-index: 1;
+    margin-left: 30%;
+     
+    
+}
+
+.titulo {
+    position: relative;
+    margin-left: 25%;
+    color: rgb(1, 32, 32);
+    margin-bottom: 2%;
+    padding: 0;
+}
+
+.titulo h2
+{
+        font-size: 60px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+        display: inline-block;
+        color: aquamarine;
+}
+
+.titulo h3
+{
+        font-size: 35px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+        display: inline-block;
+        margin-left: 1%;
+        color: rgb(56, 87, 116);
+        
+}
+
+.intro
+{
+    width: 60%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.text
+{
+    width: 96%;
+    background-color: rgba(2, 85, 85, 0.486);
+    padding: 2%;
+    margin-bottom: 1%;
+
+}
+
+@media screen and (max-width: 1030px) 
+{
+  .sigeca
+{
+    position: fixed;
+    top: 0;
+    left: 15px;
+    text-align: center;
+}
+.sigeca h1
+{
+       
+        font-size: 30px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+
+        
+}
+.imagenes {
+    margin-top: 0%; 
+    width: 70%;
+    height: 150px;
+    margin-left: 20%;
+}
+
+.imagenes img {
+    position: relative;
+    margin-top: 15%;
+    width:  200px;
+    height: 150px;
+    margin-left: 35%;
+}
+
+.titulo {
+    margin-left: 30%;
+}
+
+.titulo h2
+{
+        font-size: 60px;
+}
+.titulo h3
+{
+        font-size: 40px;
+}
+
+.intro
+{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+.intro p
+{
+    font-size: 20px;
+}
+.text
+{
+    width: 96%;
+    margin-bottom: 0%;
+
+}
+
+}
+
+
+             @media screen and (max-width: 700px) 
+{
+  
+.imagenes {
+    margin-top: 0%; 
+    width: 70%;
+    height: 150px;
+    margin-left: 20%;
+    
+}
+
+.imagenes img {
+    margin-left: 15%;
+    position: relative;
+    margin-top: 24%;
+    width:  200px;
+    height: 150px;
+}
+
+.titulo {
+    margin-left: 24%;
+}
+
+.titulo h2
+{
+        font-size: 40px;
+}
+.titulo h3
+{
+        font-size: 20px;
+}
+
+.intro
+{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+.intro p
+{
+    font-size: 15px;
+}
+.text
+{
+    width: 96%;
+    margin-bottom: 0%;
+
+}
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .imagenes {
+    width: 90%;
+    margin-left: 5%;
+    height: 120px;
+  }
+  .imagenes img {
+    width: 150px;
+    height: 100px;
+    margin-top: 12%;
+    margin-left: 40%;
+  }
+  .titulo {
+    margin-left: 10%;
+  }
+  .titulo h2 {
+    font-size: 30px;
+  }
+  .titulo h3 {
+    font-size: 18px;
+  }
+  .intro {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 14px;
+  }
+}
+
+/* --------- Móviles pequeños (hasta 480px) --------- */
+@media screen and (max-width: 480px) {
+
+  .imagenes {
+    width: 100%;
+    margin: 0;
+    margin-top: 15%;
+    height: 90px;
+    border-radius: 30px;
+    padding: 0;
+  }
+  .imagenes img {
+    width: 90px;
+    height: 60px;
+    margin-left: 35%;
+    margin-top: 15%;
+  }
+  .titulo {
+    margin-left: 0;
+    text-align: center;
+  }
+  .titulo h2 {
+    font-size: 22px;
+  }
+  .titulo h3 {
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .intro {
+    width: 98%;
+    margin-left: 1%;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .text {
+    width: 98%;
+    padding: 1%;
+    font-size: 12px;
+  }
+  form button {
+    width: 90px;
+    height: 35px;
+    font-size: 12px;
+    top: 1%;
+    right: 1%;
+  }
+}

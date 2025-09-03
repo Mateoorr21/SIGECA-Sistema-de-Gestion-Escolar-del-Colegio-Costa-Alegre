@@ -1,0 +1,99 @@
+/*Estilos del naver*/
+.sigeca
+{
+    position: fixed;
+    top: 0;
+    left: 15px;
+    text-align: center;
+}
+.sigeca h1
+{
+       
+        color: rgb(2, 2, 56);
+        font-size: 50px;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+
+
+       
+}
+
+
+/* la clase .sigeca se encarga de dar los estilos del nombre de
+nuestro sistema dentro del naver, eligiewndo un color azul oscuro en este caso como su
+color, a si mismo cuenta con una fuente de lentra serif imporytada desde google font.
+Aqui tambien ajustamos el tamaño de, y su posicion, la cual es estar cargada del lado izquierdo
+de la pantalla dejando un pequeño margen*/
+
+
+ul
+{
+    position: fixed;
+    top: 0;
+    right: 15px;
+    height: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+
+form button
+{
+    position: fixed;
+    right: 2%;
+    color: rgb(2, 2, 56);
+    font-size: 15px;
+    background-color:rgb(172, 156, 243);
+    border: 1px solid rgb(1, 32, 32);
+    transition: 0.5s;
+    padding: 0%;
+    top: 2%;
+    width: 100px;
+    height: 40px;
+    border-radius: 35px;
+}
+
+
+form button:hover
+{
+    color: beige ;
+    background-color: rgb(2, 2, 56);
+    box-shadow: 0px 0px 400px 86px #02d3f8;
+}
+
+
+/*Estos estilos de aca son pertenecientes a nuestro botón de redirección, el cual cuenta con
+un tono azul algo claro de fondo, siendo este tono el mismo del de el fondo del naver en general.
+Se le da estilo también a el enunciado dentro del botón, dando a un color igual que el del nombre de nuestro sistema.
+También se añaden cosas como un borde con un grosor visible, siendo este del mismo tono que el font,
+Así mismo también se cuenta con el cambio al momento de la acción 'hover', siendo así que ahora los colores
+se invierten (El color de fondo del botón pasa a ser el de font, y el color del font pasa a ser el del
+fondo, y también se agrega un efecto visual con el box shadow para hacerlo más atractivo visualmente
+Aquí también se deciden estilos de posición, estando este cargado del lado derecho, y de tamaño del mismo botón.
+*/
+
+
+nav
+{
+    position: fixed;
+    height: 70px;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color:rgb(172, 156, 243);
+    -webkit-box-shadow: 0px 15px 50px 11px;
+    -moz-box-shadow: 0px 15px 50px 11px;
+    box-shadow: 0px 15px 50px 11px  rgb(2, 2, 56);
+    z-index: 11;
+}
+/*En este apartado se deciden los estilos de la barra nav como tal, teniendo como fondo un tono azul claro,
+  y un tamaño de width que abarca  de extremo a extremo de la pantalla, así mismo, tiene una altura moderada.
+  cuenta con una posición absoluta para que éste independientemente de la pantalla se mantenga fijo,
+  y un z-index para que este se mantenga siempre sobre los otros componentes,
+  y también se le coloca una sombra de un tono azul oscuro, para hacerlo visualmente más agradable aún.*/
