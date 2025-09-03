@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=DM+Serif+Display:ital@0;1&display=swap');
+    
+   
+    
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 15px;
+    
+    }
+
+    /*Se importan distintas fuentes de googles fonts, las cuales utilizaremos a lo largo de nuestra
+página de estilos, así mismo se agrega un tipo y tamaño de letra défaut para nuestro apartado,
+se establece un padding y margin nulo. */
+    body
+{
+    background-image: url(../../../Imagenes/fondo.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+/*Se establece un fondo para el cuerpo de este apartado, optando así por un
+gif que acompaña la estética de nuestro sistema, así mismo se le posicionan los estilos
+necesarios a este fondo para que abarque toda la pantalla, y no se repita en ese proceso.
+También se establece la altura mínima del cuerpo dell apartado, se le dice  que será flexible a
+las distintas posiciones que puedan tomar los obj, dentro de este*/
+
+.formulario{
+    border-radius: 12px;
+    padding: 15px;
+    width: 95%;
+    background-color: #3625498f;
+    margin-bottom: 15px;
+}
+
+
+   
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ddd;
+    }
+    
+    input, select, textarea {
+        width: 98%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    
+        .faltas-list {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        max-height: 200px;
+        overflow-y: auto;
+        margin-bottom: 15px;
+    }
+    
+    .falta-item {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+    }
+    
+    .falta-item:last-child {
+        border-bottom: none;
+    }
+    
+    .falta-item input {
+        width: auto;
+        margin-right: 10px;
+    }
+
+
+    button    {
+        background-color: #efeafc;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #000033;
+        color: whitesmoke;
+    }
+
+    .tarjeta {
+        position: relative;
+        width: 90%;
+        margin: 0;
+        margin-bottom: 3%;
+        padding: 2%;
+        background-color: rgba(2, 85, 85, 0.486);    
+        border-radius: 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        max-height: 55vh;
+        overflow-y: auto;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10%;
+        margin-left: 13%;
+        width: 80%;
+    }
+
+/*Se establece el tamaño de la tarjeta, su tono de fondo, el color del box-shadow
+con el cual contara, se le coloca border redondeados, no se le pone un border,
+se le establece un padding para los componentes que estén dentro de este, y un margen, para que
+no quede pegado al footer.
+
+
+Se establece también la posición y tamaño que tendrá la tarjeta mediante la clase .contenedor.*/
+
+    .titulo
+    {
+        position: relative;
+        color: rgb(255, 255, 255);
+        margin: 0;
+        margin-bottom: 0;
+    
+    }
+
+       .titulo h2
+    {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    /*Se aplican los estilos correspondientes que deberá tener el font del titulo nuestro apartado,
+tamaño, posicion, color
+*/
+
+    .selecMateria
+    {
+        position: relative;
+        color: rgb(255, 255, 255);
+        margin-left: 2%;
+    }
+
+
+    .selecMateria label
+    {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .selecGrupo
+    {
+        position: relative;
+        color: rgb(255, 255, 255);
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+
+    .selecGrupo label
+    {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    /*Se aplican los estilos correspondientes que deberá tener el font de las instrucciones nuestro apartado,
+tamaño, posicion, color
+*/
+    .tabla {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .tabla th, .tabla td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        
+
+
+    }
+
+    .tabla td
+    {
+        padding: 0;
+        padding-left: 2%;
+    }
+
+    .tabla th {
+        background-color: rgb(1, 1, 39);
+        color: white;
+        font-weight: 600;
+        
+    }
+
+    .tabla tr:nth-child(even) {
+        background-color: rgba(144, 251, 255, 0.452);
+    }
+
+    .tabla td:hover {
+        background-color:rgba(22, 63, 65, 0.856);
+    }
+
+        /*Formato especifico de las tablas, manteniendo de estas una medida maxima fija,
+    contando con distintos estilos para los enunciados principales, asi como una alternacion de color gris claro y azul claro
+    para los datos de estas, se deciden cosas como margenes internos de cada campo, margenes exteriopres de cada campo
+    grosor del font, color del font*/
+
+    .boton-opcion {          
+        margin: 5px;
+        padding: 10px 20px;
+        background-color:rgb(3, 23, 138); /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Suavizado del cambio de color */
+        width: auto;
+    }
+
+    .boton-opcion:hover {
+        background-color:rgb(60, 177, 197); /* Color de fondo al pasar el cursor */
+    }
+
+        .boton-mensaje {
+        display: inline-block; /*Boton centrado*/
+        margin: 0 auto; /*Boton centrado*/
+        width: 100%; /*Ancho del boton*/
+        padding: 10px 20px;
+        background-color: rgb(3, 23, 138);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .boton-mensaje:hover {
+        background-color: rgb(60, 177, 197);
+    }
+
+
+    
+    /*Aquí se establecen los estilos que tienen los botones de opciones de seleccion del apartado,
+    estos al momento de aparecer hacen que la pantalla se vuelva de un tono mas opaco, y que lo unico que este de un color vibrante
+    sea el boton, el cual esta centrado justo en la parte del medio de nuestra pantalla y es de un color azul, su enunciado tiene un font de color blanco, y al momento de activar la accion
+    'hover' este cambia de color a un azul mas claro.*/
+
+.dialogo-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* fondo oscuro semitransparente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .dialogo-contenido p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .dialogo-contenido button {
+        display: inline-block; /*Boton centrado*/
+        margin: 0 auto; /*Boton centrado*/
+        width: 100%; /*Ancho del boton*/
+        padding: 10px 20px;
+        background-color: rgb(3, 23, 138);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .dialogo-contenido button:hover {
+        background-color: rgb(60, 177, 197);
+    }
+
+       /*Aquí se establecen los estilos que tienen los botones de mensajes del apartado,
+    estos al momento de aparecer hacen que la pantalla se vuelva de un tono mas opaco, y que lo unico que este de un color vibrante
+    sea el boton, el cual esta centrado justo en la parte del medio de nuestra pantalla y es de un color azul, su enunciado tiene un font de color blanco, y al momento de activar la accion
+    'hover' este cambia de color a un azul mas claro.*/
+.modulo-clubes {
+    padding: 20px;
+}
+
+.header-clubes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.titulo-clubes {
+    font: 30px "DM Serif Display", serif;
+    margin: 0;
+    color: azure;
+}
+
+/*Estilo especifico para el titulo del club*/
+
+.club-card {
+    
+    border-radius: 12px;
+    padding: 15px;
+    width: 95%;
+    background-color: #3625498f;
+}
+
+/*Estilo especifico para la carta del club*/
+
+
+.club-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(94, 207, 211, 0.3);
+}
+
+.club-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.club-instructor {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.club-horario {
+    background-color: rgba(94, 207, 211, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+/*Estilo especifico para la parte del header de la tarjeta del club, 
+donde se agrega un divisor para diferenciar este apartado del resto de contenido del club,
+asi mismo se anexan los estilos de color, fuente y tamaño del font para los distintos 
+enunciados de este apartado*/
+
+
+
+.club-description {
+    font-size: 14px;
+    color: white;
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+.presente { color: #005304; font-weight: 600; }
+.ausente { color: #790000; font-weight: 600; }
+.tarde { color: #c4b700; font-weight: 600; }
+
+/*Diferentes estilos del color del font para los distintos casos de 
+*/
+
+.aprob {color: #005304; font-weight: 600; }
+
+.no-aprob { color: #790000; font-weight: 600; }
+
+.rev { color: #c4b700; font-weight: 600; }
+
+.justificada {
+    color: #005304;
+    font-weight: 600;
+}
+
+.no-justificada {
+    color: #790000;
+    font-weight: 600;
+}
+
+/* Móviles pequeños: hasta 480px */
+@media (max-width: 480px) {
+    .formulario,
+    .club-card,
+    .tarjeta {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .contenedor {
+        margin-left: 0;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .tarjeta
+    {
+                margin-top: 6%;
+    }
+
+    .tabla th, .tabla td {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+
+    .titulo h2,
+    .titulo-clubes {
+        font-size: 22px;
+    }
+
+    .selecMateria label,
+    .selecGrupo label {
+        font-size: 16px;
+    }
+
+    .boton-opcion,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Tablets: entre 481px y 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .formulario,
+    .club-card,
+    .tarjeta {
+        width: 98%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+        .tarjeta
+    {
+                margin-top: 6%;
+    }
+    
+    .contenedor {
+        margin-left: 2%;
+        width: 96%;
+        gap: 12px;
+    }
+
+    .tabla th, .tabla td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    .titulo h2,
+    .titulo-clubes {
+        font-size: 26px;
+    }
+
+    .selecMateria label,
+    .selecGrupo label {
+        font-size: 18px;
+    }
+
+    .boton-opcion,
+    button {
+        font-size: 15px;
+        padding: 12px;
+    }
+}

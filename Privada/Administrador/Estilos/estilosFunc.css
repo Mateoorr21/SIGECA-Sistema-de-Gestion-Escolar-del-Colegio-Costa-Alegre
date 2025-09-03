@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=DM+Serif+Display:ital@0;1&display=swap');
+    
+   
+    
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 15px;
+    
+    }
+
+    /*Se importan distintas fuentes de googles fonts, las cuales utilizaremos a lo largo de nuestra
+página de estilos, así mismo se agrega un tipo y tamaño de letra défaut para nuestro apartado,
+se establece un padding y margin nulo. */
+    body
+{
+    background-image: url(../../../Imagenes/fondo.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+/*Se establece un fondo para el cuerpo de este apartado, optando así por un
+gif que acompaña la estética de nuestro sistema, así mismo se le posicionan los estilos
+necesarios a este fondo para que abarque toda la pantalla, y no se repita en ese proceso.
+También se establece la altura mínima del cuerpo dell apartado, se le dice  que será flexible a
+las distintas posiciones que puedan tomar los obj, dentro de este*/
+
+    /* Tarjeta principal */
+    .tarjeta {
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        background-color: rgba(2, 85, 85, 0.486);
+        border-radius: 32px;
+        box-shadow: 0 0 50px rgba(0, 0, 34, 0.7);
+        padding: 20px;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    .contenido {
+        background-color: var(--white);
+        padding: 20px;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 2%;
+        margin-top: 8%;
+        margin-left: 25%;
+    }
+
+    
+
+/*Se establece el tamaño de la tarjeta, su tono de fondo, el color del box-shadow
+con el cual contara, se le coloca border redondeados, no se le pone un border,
+se le establece un padding para los componentes que estén dentro de este, y un margen, para que
+no quede pegado al footer.
+
+
+Se establece también la posición y tamaño que tendrá la tarjeta mediante la clase .contenido.*/
+
+    .titulo
+    {
+        margin: 0;
+        color: azure;
+    }
+
+    .titulo h2
+    {
+        font: 30px "DM Serif Display", serif;
+        margin-left: 0%;
+    }
+/*Se aplican los estilos correspondientes que deberá tener el font del titulo nuestro apartado,
+tamaño, posicion, color
+*/
+    .formulario
+{
+    border-radius: 12px;
+    padding: 15px;
+    width: 95%;
+    background-color: #3625498f;
+}
+
+form
+{
+    padding: 2%;
+    
+}
+
+fieldset
+{
+    border-radius: 35px;
+    padding: 3%;
+    border: solid 2px #002533a1;
+
+}
+
+/*Se establece un fondo de un color predeterminado para los formulariosm
+asi como se le agrega un margen interno, y un tamaño predeterminado apartir de el tamaño de la tarjeta,
+se agregan cuestiones adisionales para un mejor efectop visual como lo es un borde redondeado.
+
+y en caso de que el formulario cuente con un fildeset se agrega un margen interno
+a partir de este paera mayor visibilidad. Se ajusta el tamaño de grosor de nuestro fildset y su color*/
+
+input, select, textarea{
+    width: 98%;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+/*Se utilizan estilos especificos para los campos de los formularios,
+siendo estos de color blanco y abarcando practicamente todo el esacio de lado a lado de la tarjeta,
+se le agrega un tipo de font especifico para los campos.*/
+
+button    {
+    background-color: #efeafc;
+     border: none;
+     padding: 12px;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+     font-size: 1rem;
+     font-weight: 600;
+     transition: background-color 0.3s;
+ }
+
+
+ button:hover {
+     background-color: #000033;
+     color: whitesmoke;
+ }
+
+  /*Se esstablece un color blanco para los botones correspondientes a los formularios,
+ estos contaran con bordes redondeados y abarcaraon todo el espacio de lado a lado que ocupe nuestro formulario.
+ y se agrega tambien el estilo que tendrá al momento de la accion 'hover',
+ siendo que nuestro boton pasara a tener copmo color de fondo un tono azul marino, y de color de font un
+ tono blanco
+ */
+
+/*Estilos para el cuadro de diálogo*/
+    .dialogo-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* fondo oscuro semitransparente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .dialogo-contenido p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .boton-mensaje {
+        display: inline-block; /*Boton centrado*/
+        margin: 0 auto; /*Boton centrado*/
+        width: 100%; /*Ancho del boton*/
+        padding: 10px 20px;
+        background-color: rgb(3, 23, 138);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .boton-mensaje:hover {
+        background-color: rgb(60, 177, 197);
+    }
+
+    /*Aquí se establecen los estilos que tienen los botones de mensajes del apartado,
+    estos al momento de aparecer hacen que la pantalla se vuelva de un tono mas opaco, y que lo unico que este de un color vibrante
+    sea el boton, el cual esta centrado justo en la parte del medio de nuestra pantalla y es de un color azul, su enunciado tiene un font de color blanco, y al momento de activar la accion
+    'hover' este cambia de color a un azul mas claro.*/
+
+
+    .btn-matricular {
+        background-color: #71deff; /* azul claro */
+    }
+
+    /*Estilos especificos para el color de fondo del boton de matricular.*/
+
+    .boton-cancelar {          
+        margin: 5px;;
+        padding: 10px 20px;
+        background-color:rgb(124, 11, 11); /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Suavizado del cambio de color */
+    }
+
+    .boton-cancelar:hover {
+        background-color:rgb(255, 126, 126); /* Color de fondo al pasar el cursor */
+    }
+
+    .boton-confirmar {          
+        margin: 5px;;
+        padding: 10px 20px;
+        background-color:rgb(11, 124, 62); /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Suavizado del cambio de color */
+    }
+
+    .boton-confirmar:hover {
+        background-color:rgb(140, 212, 143); /* Color de fondo al pasar el cursor */
+    }
+
+/*Estilos especificos para los botones de confirmar y cancelar, cada uno con sus respectivos colores
+de fondo, siendo estos unos tonos rojo y verde intensos, asi como cada uno contando con tamaños propios,
+ademas de que al momento de activarse la accion 'hover' sobre estos, sus res´pectivos colores pasan a ser
+opacos */
+
+.btn-eliminar {          
+    background-color:rgb(255, 161, 161); /* Color de fondo */
+}
+
+.btn-eliminar:hover {
+    background-color:rgb(160, 36, 36); /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto */
+}
+
+/*Estilos especificos del boton de eliminar, tamaño color rojo bajito, 
+color de font de enunciado del boton predeterkminado, y al momento de la accion hover el color de 
+fondo cambia a un rojo intenso y a  un font en tonalidades blancas*/
+
+.deshabilitado form {
+    background-color: #002533a1;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.deshabilitado button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #6174868f;
+    color: white;
+    border-radius: 4px;
+}
+
+.deshabilitado button:hover {
+     background-color: #000033;
+     color: whitesmoke;
+ }
+
+/*Estilos especificos para el formulario de deshabilitado, no cambia muchoa diferencia del formulario anterior*/
+    .input-info {
+        background-color: rgb(179, 255, 245); /*Color azul bajito*/
+        text-align: center;
+    }
+
+    .input-hor {
+        background-color: rgb(248, 200, 255); /*Color azul bajito*/
+        text-align: center;
+        border: 0px;
+    }
+
+    /*colores de fondo y tipo de aliniacion especifica para determinados inputs en especifico*/
+
+  .tablita 
+    {
+    max-width: 100%;
+    max-height: 350px;
+    overflow-x: auto;
+    overflow-y: auto;
+    }
+
+        .tabla 
+        {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+
+    .tabla th, .tabla td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .tabla td
+    {
+        padding: 0;
+        padding-left: 2%;
+        color: black;   
+    }
+
+    .tabla th {
+        background-color: rgb(1, 1, 39);
+        color: white;
+        font-weight: 600; 
+    }
+
+    .tabla tr:nth-child(even) {
+        background-color: rgba(144, 251, 255, 0.452);
+    }
+
+    /*Formato especifico de las tablas, manteniendo de estas una medida maxima fija,
+    contando con distintos estilos para los enunciados principales, asi como una alternacion de color gris claro y azul claro
+    para los datos de estas, se deciden cosas como margenes internos de cada campo, margenes exteriopres de cada campo
+    grosor del font, color del font*/
+
+    .boton-rechazar {          
+        margin: 5px;;
+        padding: 10px 20px;
+        background-color:rgb(124, 11, 11); /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Suavizado del cambio de color */
+    }
+
+    .boton-rechazar:hover {
+        background-color:rgb(255, 126, 126); /* Color de fondo al pasar el cursor */
+    }
+
+    .boton-aprobar {          
+        margin: 5px;;
+        padding: 10px 20px;
+        background-color:rgb(11, 124, 62); /* Color de fondo */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 5px; /* Bordes redondeados */
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Suavizado del cambio de color */
+    }
+
+    .boton-aprobar:hover {
+        background-color:rgb(140, 212, 143); /* Color de fondo al pasar el cursor */
+    }
+
+    
+/*Estilos especificos para los botones de aprovar y rechzar, cada uno con sus respectivos colores
+de fondo, siendo estos unos tonos rojo y verde intensos, asi como cada uno contando con tamaños propios,
+ademas de que al momento de activarse la accion 'hover' sobre estos, sus res´pectivos colores pasan a ser
+opacos */
+
+
+/* Para tablets (pantallas medianas) */
+@media (min-width: 600px) and (max-width: 991.98px) {
+  .tarjeta, .contenido, .formulario {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .tablita {
+    max-height: 350px;
+  }
+  .tabla {
+    font-size: 15px;
+  }
+}
+
+
+/* Para móviles (pantallas pequeñas) */
+@media (max-width: 599.98px) {
+  .contenido {
+    max-width: 90%;
+    margin-top: 20%;
+    margin-left: 9%;
+    margin-bottom: 3%;
+    padding: 8px;
+  }
+  .tablita {
+    max-height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .tabla {
+    min-width: 400px;
+    font-size: 13px;
+  }
+  .tabla th, .tabla td {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+}
+
+  /*Se ajustan los estilos mediante un @media con el fin de
+  que al momento de ser utilizado en pantallas con menor
+  tamaño siga siendo visualmente armónico*/
